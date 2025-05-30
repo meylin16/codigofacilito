@@ -6,7 +6,8 @@ jobs:
   deploy-meylin:
     runs-on: ubuntu-latest
     steps:
-      run: echo "hacemos pull del codigo"
-      run: echo "correr migraciones"
-      run: echo "generar binario"
-      run: echo "publicar version"
+        -use: actions/checkout@v4
+        -run: echo "hacemos pull del codigo"
+        -run: echo "correr migraciones"
+        -run: echo "generar binario"
+        -run: echo "publicar version"
