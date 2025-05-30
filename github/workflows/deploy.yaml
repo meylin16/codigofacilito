@@ -1,0 +1,13 @@
+name: "hola mey"
+on:
+  push:
+    branches: ["main"]
+jobs: 
+  deploy-meylin:
+    runs-on: ubuntu-latest
+    step:
+        - uses: actions/checkout@v4
+        - run: echo "hacemos pull del codigo"
+        - run: echo "correr migraciones"
+        - run: echo "generar binario"
+        - run: echo "publicar version"
